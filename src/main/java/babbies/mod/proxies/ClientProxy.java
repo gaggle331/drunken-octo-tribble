@@ -1,9 +1,7 @@
 package babbies.mod.proxies;
 
-public void registerRenderers ()
-{
-	
-}
+import babbies.mod.init.ModItems;
+
 
 public class ClientProxy extends CommonProxy
 {

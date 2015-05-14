@@ -1,4 +1,11 @@
 package babbies.mod.help;
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class RegisterHelper {
 
 public static void registerBlock(Block block)
 {
@@ -12,7 +19,7 @@ public static void registerItem(Item item)
 
 public static void registerItemRenderer(Item item)
 {
-	Minecraft.getMinecraft() .getRenderItem() .getItemModeMesher() .register(item, 0, 
+	Minecraft.getMinecraft() .getRenderItem() .getItemModelMesher() .register(item, 0, 
 new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName() .substring(5), "inventory"));
 }
 
@@ -23,7 +30,5 @@ public static void registerBlockRenderer(Block block)
 new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName() .substring(5),
 "inventory"));
 }
-
-public class RegisterHelper {
 
 }
