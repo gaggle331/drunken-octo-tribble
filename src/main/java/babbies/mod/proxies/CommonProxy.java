@@ -1,5 +1,6 @@
 package babbies.mod.proxies;
 
+import babbies.mod.items.Items;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -12,7 +13,7 @@ public class CommonProxy {
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
-		// TODO Auto-generated method stub
+		Items.addItems();
 		
 	}
 

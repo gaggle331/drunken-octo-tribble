@@ -7,13 +7,13 @@ import babbies.mod.help.Reference;
 public class RenderItemRegister {
 	
 	public static void registerItemIcons(){
-		registerItem(addItems.dooperItem);
-		registerItem(addItems.doopItem);
+		registerItem(Items.dooper, 0);
+		registerItem(Items.doop, 0);
 	}
 	
-	private static void registerItem(Item item) {
+	private static void registerItem(Item item, int meta) {
 		if(item instanceof Item){
-			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + ((LeopoldItem) item).getName(), "inventory"));
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(Reference.MODID + ":" + ((LeopoldItem) item).getName(), "inventory"));
 		}
 		
 	}

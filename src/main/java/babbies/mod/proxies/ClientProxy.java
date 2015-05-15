@@ -3,8 +3,6 @@ package babbies.mod.proxies;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import babbies.mod.blocks.RenderBlockRegister;
-import babbies.mod.init.ModBlocks;
 import babbies.mod.items.RenderItemRegister;
 
 
