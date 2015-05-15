@@ -6,9 +6,9 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import babbies.mod.help.Reference;
-import babbies.mod.help.RegisterHelper;
 import babbies.mod.proxies.CommonProxy;
+import babbies.mod.reference.Reference;
+import babbies.mod.reference.RegisterHelper;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 

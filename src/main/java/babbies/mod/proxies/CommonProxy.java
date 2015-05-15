@@ -1,5 +1,6 @@
 package babbies.mod.proxies;
 
+import babbies.mod.blocks.Blocks;
 import babbies.mod.items.Items;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -14,6 +15,7 @@ public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
 		Items.addItems();
+		Blocks.addBlocks();
 		
 	}
 

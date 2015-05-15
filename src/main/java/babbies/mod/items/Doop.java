@@ -1,6 +1,6 @@
 package babbies.mod.items;
 
-import babbies.mod.help.Reference;
+import babbies.mod.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
