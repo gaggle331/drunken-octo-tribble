@@ -17,6 +17,6 @@ public class Dooper extends Item implements LeopoldItem
 	
 	public String getName()
 	{
-		return this.getUnlocalizedName().substring(5);
+		return this.getUnlocalizedName().substring(13);
 	}
 }

@@ -12,8 +12,9 @@ public class RenderItemRegister {
 	}
 	
 	private static void registerItem(Item item, int meta) {
-		if(item instanceof Item){
-			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(Reference.MODID + ":" + ((LeopoldItem) item).getName(), "inventory"));
+		if(item instanceof LeopoldItem){
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(Reference.MODID + ":"+ ((LeopoldItem) item).getName(), "inventory"));
+		System.out.println(Reference.MODID + ":"+ ((LeopoldItem) item).getName());
 		}
 		
 	}
