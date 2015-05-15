@@ -1,10 +1,10 @@
 package babbies.mod.blocks;
 
-import babbies.mod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import babbies.mod.reference.Reference;
 
 public class DoopBlock extends Block implements LeopoldBlocks
 {

@@ -16,7 +16,6 @@ public class RenderBlockRegister {
 	private static void registerBlock(Block block, int meta) {
 		if(block instanceof LeopoldBlocks)
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((LeopoldBlocks)block).getName(), "normal"));
-		System.out.println(Reference.MODID + ":" + ((LeopoldBlocks)block).getName());
 	}
 
 }

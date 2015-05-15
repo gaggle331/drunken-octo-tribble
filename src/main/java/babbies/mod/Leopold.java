@@ -6,6 +6,8 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import babbies.mod.generation.LeopoldWorldGeneration;
 import babbies.mod.proxies.CommonProxy;
 import babbies.mod.reference.Reference;
 import babbies.mod.reference.RegisterHelper;
@@ -16,6 +18,7 @@ public class Leopold
 {
 	@Instance(Reference.MODID)
 	public static Leopold instance;
+	LeopoldWorldGeneration eventWorldGen = new LeopoldWorldGeneration();
 	public static RegisterHelper registerHelper;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide =
@@ -34,6 +37,7 @@ public class Leopold
 	public void init(FMLInitializationEvent event)
 	{
 		proxy.init(event);
+		GameRegistry.registerWorldGenerator(this.eventWorldGen, 1);
 /*		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian),
     		"AAA",
     		"AAA",
