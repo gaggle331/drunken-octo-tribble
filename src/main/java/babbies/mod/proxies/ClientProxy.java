@@ -1,13 +1,30 @@
 package babbies.mod.proxies;
 
-import babbies.mod.init.ModItems;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import babbies.mod.blocks.RenderBlockRegister;
+import babbies.mod.init.ModBlocks;
+import babbies.mod.items.RenderItemRegister;
 
 
 public class ClientProxy extends CommonProxy
 {
 	@Override
-	public void registerRenderers ()
+	public void preInit(FMLPreInitializationEvent event)
 	{
-		ModItems.registerItemRenderer();
+		super.preInit(event);
+	}
+	
+	@Override
+	public void init(FMLInitializationEvent event) {
+		super.init(event);
+        //RenderBlockRegister.registerBlockIcons();
+        RenderItemRegister.registerItemIcons();
+    }
+	
+	@Override
+	public void postInit(FMLPostInitializationEvent event) {
+		super.postInit(event);
 	}
 }
