@@ -38,25 +38,6 @@ public class Leopold
 	{
 		proxy.init(event);
 		GameRegistry.registerWorldGenerator(this.eventWorldGen, 1);
-/*		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian),
-    		"AAA",
-    		"AAA",
-    		"AAA",
-    		'A', Items.cookie
-		);
-		
-		GameRegistry.addRecipe(new ItemStack(dooperItem, 4),
-		    	"AA",
-		    	"AA",
-		    	'A', Blocks.cobblestone
-		);
-		
-		GameRegistry.addRecipe(new ItemStack(Items.dye, 2, 15), 
-		    	"AB ",
-		    	"AAC",
-		    	"A  ",
-		    	'A', Items.cookie, 'B', Blocks.dirt, 'C', new ItemStack(Items.dye, 1, 1)
-		);*/
 	}
 
 	@Mod.EventHandler
