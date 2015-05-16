@@ -7,8 +7,8 @@ import babbies.mod.reference.Reference;
 public class RenderItemRegister {
 	
 	public static void registerItemIcons(){
-		registerItem(Items.dooper, 0);
 		registerItem(Items.doop, 0);
+		registerItem(Items.doopbrew, 0);
 	}
 	
 	private static void registerItem(Item item, int meta) {

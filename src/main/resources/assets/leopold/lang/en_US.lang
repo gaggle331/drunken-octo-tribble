@@ -1,4 +1,6 @@
 tile.leopold_dooperoreblock.name=Dooper Ore
 tile.leopold_doopblock.name=Doop Block
+tile.leopold_compresseddoopblock.name=Compressed Doop Block
 item.leopold_dooper.name=Dooper
 item.leopold_doop.name=Doop
+item.leopold_doopbrew.name=Doop Brew

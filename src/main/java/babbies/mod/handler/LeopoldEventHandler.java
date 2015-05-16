@@ -15,14 +15,14 @@ public class LeopoldEventHandler {
 			event.drops.clear();
 			event.dropChance=1.0f;
 			Random rand = new Random();
+			int j = 2;
 			for(int i=1; i<3; i++){
 				int chance = rand.nextInt(5)+1;
 				if(chance == 1){
-					event.drops.add(new ItemStack(Items.doop));
+					j++;
 				}
 			}
-			event.drops.add(new ItemStack(Items.doop));
-			event.drops.add(new ItemStack(Items.doop));
+			event.drops.add(new ItemStack(Items.doop,j));
 		}
 	}
 }

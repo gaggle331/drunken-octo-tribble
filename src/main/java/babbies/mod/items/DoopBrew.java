@@ -5,10 +5,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class Dooper extends Item implements LeopoldItem
+public class DoopBrew extends Item implements LeopoldItem
 {
-	private final String name = "dooper";
-	public Dooper()
+	private final String name = "doopbrew";
+	public DoopBrew()
 	{
 		GameRegistry.registerItem(this, name);
 		setUnlocalizedName(Reference.MODID + "_" + name);

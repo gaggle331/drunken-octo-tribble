@@ -1,6 +1,7 @@
 package babbies.mod.proxies;
 
 import babbies.mod.blocks.Blocks;
+import babbies.mod.generation.LeopoldWorldGeneration;
 import babbies.mod.handler.LeopoldCraftingHandler;
 import babbies.mod.handler.LeopoldEventHandler;
 import babbies.mod.items.Items;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy {
 
@@ -18,8 +20,8 @@ public class CommonProxy {
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
-		Items.addItems();
 		Blocks.addBlocks();
+		Items.addItems();
 		LeopoldEventHandler handler = new LeopoldEventHandler();
 		MinecraftForge.EVENT_BUS.register(handler);
 		FMLCommonHandler.instance().bus().register(handler);
@@ -27,7 +29,7 @@ public class CommonProxy {
 	}
 
 	public void init(FMLInitializationEvent event) {
-		
+		GameRegistry.registerWorldGenerator(new LeopoldWorldGeneration(), 1);
 	}
 
 	public void postInit(FMLPostInitializationEvent event) {

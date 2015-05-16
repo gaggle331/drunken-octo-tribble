@@ -7,7 +7,7 @@ import babbies.mod.blocks.RenderBlockRegister;
 import babbies.mod.items.RenderItemRegister;
 
 
-public class ClientProxy extends CommonProxy
+public class ClientOnlyProxy extends CommonProxy
 {
 	@Override
 	public void preInit(FMLPreInitializationEvent event)
@@ -18,7 +18,6 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
-        //RenderBlockRegister.registerBlockIcons();
         RenderItemRegister.registerItemIcons();
         RenderBlockRegister.registerBlockIcons();
     }

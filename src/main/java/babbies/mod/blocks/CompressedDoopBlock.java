@@ -1,16 +1,15 @@
 package babbies.mod.blocks;
 
-import babbies.mod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import babbies.mod.reference.Reference;
 
-
-public class DoopBlock extends Block implements LeopoldBlocks
+public class CompressedDoopBlock extends Block implements LeopoldBlocks
 {
-
-	public DoopBlock(String unlocalizedName, Material material, float localHardness, float localResistance)
+	
+	public CompressedDoopBlock(String unlocalizedName, Material material, float localHardness, float localResistance)
 	{
 		super(material);
 		GameRegistry.registerBlock(this, unlocalizedName);
@@ -21,7 +20,7 @@ public class DoopBlock extends Block implements LeopoldBlocks
 		setHardness(localHardness);
 		setResistance(localResistance);
 	}
-	  
+	
 	@Override
 	public int getRenderType() {
 		return 3;
