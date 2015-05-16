@@ -15,5 +15,12 @@ public class LeopoldCraftingHandler {
 				"AAA",
 				'A', Items.doop
 				);
+		
+		GameRegistry.addRecipe(new ItemStack(Blocks.compresseddoopblock),
+				"AAA",
+				"AAA",
+				"AAA",
+				'A', Blocks.doopblock
+				);
 	}
 }
