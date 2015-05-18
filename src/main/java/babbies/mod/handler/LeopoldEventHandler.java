@@ -2,7 +2,7 @@ package babbies.mod.handler;
 
 import java.util.Random;
 
-import babbies.mod.blocks.Blocks;
+import babbies.mod.blocks.ModBlocks;
 import babbies.mod.items.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class LeopoldEventHandler {
 	@SubscribeEvent
 	public void onDooperOreDrop(BlockEvent.HarvestDropsEvent event){
-		if (event.state.getBlock() == Blocks.dooperoreblock){
+		if (event.state.getBlock() == ModBlocks.dooperoreblock){
 			event.drops.clear();
 			event.dropChance=1.0f;
 			Random rand = new Random();

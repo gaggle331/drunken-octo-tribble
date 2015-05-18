@@ -9,18 +9,18 @@ public class LeopoldCraftingHandler {
 	//TODO: Add Crafting Recipes here and add call in CommonProxy to initialize
 	public static void init(){
 
-		GameRegistry.addRecipe(new ItemStack(Blocks.doopblock),
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.doopblock),
 				"AAA",
 				"AAA",
 				"AAA",
 				'A', Items.doop
 				);
 		
-		GameRegistry.addRecipe(new ItemStack(Blocks.compresseddoopblock),
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.compresseddoopblock),
 				"AAA",
 				"AAA",
 				"AAA",
-				'A', Blocks.doopblock
+				'A', ModBlocks.doopblock
 				);
 	}
 }

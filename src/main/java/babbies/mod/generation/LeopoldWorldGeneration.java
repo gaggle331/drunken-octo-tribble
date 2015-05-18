@@ -2,7 +2,7 @@ package babbies.mod.generation;
 
 import java.util.Random;
 
-import babbies.mod.blocks.Blocks;
+import babbies.mod.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
@@ -25,7 +25,7 @@ public class LeopoldWorldGeneration implements IWorldGenerator {
 	}
 	private void generateSurface(World world, Random random, int x, int z)
 	{
-		this.addOreSpawn(Blocks.dooperoreblock, world, random, x, z, 16, 16, 2 + random.nextInt(3), 10, 0, 32);
+		this.addOreSpawn(ModBlocks.dooperoreblock, world, random, x, z, 16, 16, 2 + random.nextInt(3), 10, 0, 32);
 	}
 
 	private void generateNether(World world, Random random, int x, int z)
@@ -45,7 +45,7 @@ public class LeopoldWorldGeneration implements IWorldGenerator {
 			int posX = blockXPos + random.nextInt(maxX);
 			int posY = minY + random.nextInt(maxY - minY);
 			int posZ = blockZPos + random.nextInt(maxZ);
-			new WorldGenMinable(Blocks.dooperoreblock.getDefaultState(), maxVeinSize).generate(world, random, new BlockPos(posX, posZ, posY));
+			new WorldGenMinable(ModBlocks.dooperoreblock.getDefaultState(), maxVeinSize).generate(world, random, new BlockPos(posX, posZ, posY));
 		}
 	}
 }

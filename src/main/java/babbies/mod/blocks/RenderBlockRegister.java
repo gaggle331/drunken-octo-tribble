@@ -9,9 +9,10 @@ import net.minecraft.item.Item;
 public class RenderBlockRegister {
 
 	public static void registerBlockIcons() {
-		registerBlock(Blocks.dooperoreblock,0);
-		registerBlock(Blocks.doopblock,0);
-		registerBlock(Blocks.compresseddoopblock,0);
+		registerBlock(ModBlocks.dooperoreblock,0);
+		registerBlock(ModBlocks.doopblock,0);
+		registerBlock(ModBlocks.compresseddoopblock,0);
+		registerBlock(ModBlocks.portalDoop, 0);
 	}
 
 	private static void registerBlock(Block block, int meta) {
@@ -20,5 +21,4 @@ public class RenderBlockRegister {
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((LeopoldBlocks)block).getName(), "inventory"));
 		}
 	}
-
 }
